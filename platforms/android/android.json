@@ -1,0 +1,128 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"CorHttpd\"><param name=\"android-package\" value=\"com.rjfun.cordova.httpd.CorHttpd\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"HotSpotPlugin\"><param name=\"android-package\" value=\"de.martinreinhardt.cordova.plugins.hotspot.HotSpotPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\" />",
+                            "count": 1
+                        }
+                    ],
+                    "application/activity": [
+                        {
+                            "xml": "<action android:name=\"android.net.conn.CONNECTIVITY_CHANGE\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.suraj.lukit"
+        },
+        "com.rjfun.cordova.httpd": {
+            "PACKAGE_NAME": "com.suraj.lukit"
+        },
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.suraj.lukit"
+        },
+        "cordova-plugin-hotspot": {
+            "PACKAGE_NAME": "com.suraj.lukit"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.suraj.lukit"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/com.rjfun.cordova.httpd/www/CorHttpd.js",
+            "id": "com.rjfun.cordova.httpd.CorHttpd",
+            "clobbers": [
+                "cordova.plugins.CorHttpd"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-hotspot/www/HotSpotPlugin.js",
+            "id": "cordova-plugin-hotspot.HotSpotPlugin",
+            "clobbers": [
+                "cordova.plugins.hotspot"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+            "id": "cordova-plugin-splashscreen.SplashScreen",
+            "clobbers": [
+                "navigator.splashscreen"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.2.2",
+        "com.rjfun.cordova.httpd": "0.9.2",
+        "cordova-plugin-compat": "1.0.0",
+        "cordova-plugin-hotspot": "1.2.5",
+        "cordova-plugin-splashscreen": "3.2.2"
+    }
+}

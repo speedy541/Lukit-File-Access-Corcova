@@ -1,0 +1,28 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.suraj.lukit"
+        },
+        "com.rjfun.cordova.httpd": {
+            "PACKAGE_NAME": "com.suraj.lukit"
+        },
+        "cordova-plugin-hotspot": {
+            "PACKAGE_NAME": "com.suraj.lukit"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.suraj.lukit"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.suraj.lukit"
+        }
+    }
+}
